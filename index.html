@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JSEXAMPLE!</title>
+	<style>
+		/*.box1{
+		width: 300px;
+		height: 300px;
+		background-color: red;
+		display: none;
+		}
+		
+		
+		.imgBlock{
+			height: 400px;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		.dots{
+			text-align: center;
+		}
+		.dot{
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			border: 1px solid #ff0000;
+			display: inline-block;
+			margin: 15px;
+			cursor: pointer;
+		}
+		.active{
+			background-color: #ff0000;
+		}
+		.tabBtns{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		}
+		.tabBtns li{
+		padding: 15px 40px;
+			background-color: #e1e1e1;
+			text-transform: uppercase;
+			font-family: sans-serif;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.active{
+			background-color: #000 !important;
+			color: #fff;*//
+		}
+		p{
+			padding: 30px;
+			background-color: #e1e1e1;
+			display: none;
+		}*/
+		
+		body{
+            background-color: #333;
+        }
+        #slider_container{
+            position: relative;
+            width: 600px;
+            height: 300px;
+            margin: 0 auto;
+            border-bottom: 5px solid green;
+            /*overflow: hidden;*/
+        }
+        .slides{
+            background-color: #fff;
+            list-style-type: none;
+            padding: 0;
+            position: relative;
+            height: 100%;
+        }
+        .slides>li{
+            float: left;
+            height: 100%;
+            background-color: #e1e1e1;
+            font-size: 40px;
+        }
+        .slides li:nth-child(even){
+            background-color: #3498db;
+        }
+        .controls{
+            text-align: center;
+            padding-top: 40px;
+            position: absolute;
+            bottom: 45%;
+            right: 0;
+			width: 100%;
+        }
+        .controls button{
+            border: none;
+            padding: 10px 40px;
+        }
+		
+		#prevSlide{
+		float: left;
+		}
+		#nextSlide{
+		float: right;
+		}
+		
+		.dots{
+		text-align: center;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+			width: 100%;
+		}
+		.dot{
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			border: 1px solid #ff0000;
+			display: inline-block;
+			margin: 15px;
+			cursor: pointer;
+		}
+		.active{
+			background-color: #ff0000;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<!--<button class="someClass">Clicker//</button>
+	<button class="someClass">Clicker</button>
+	<button class="someClass">Clicker</button>-->
+	
+	<!--<button id="someID">Clicker</button>
+	<button id="someID">Clicker</button>
+	<button id="someID">Clicker</button>
+	<br>
+	<br>
+	<br>
+	<button class="showBlock">Show Block</button>
+	<div class="box1"></div>
+	<div class="box1"></div>
+	<div class="box1"></div>-->
+	
+	<!--<div class="imgBlock"></div>
+	<div class="dots"></div>-->
+	
+	<!--<ul class="tabBtns">
+		<li class ="active">TAB 1</li>
+		<li>TAB 1</li>
+		<li>TAB 1</li>
+	</ul>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, dolorem, enim, suscipit at soluta maiores ab temporibus aliquam delectus tempora voluptates a rerum doloribus minus nostrum inventore similique repellat vero.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum, quas ipsa ex aperiam reprehenderit expedita repellat commodi quibusdam ipsam vero quam beatae magni doloremque unde itaque hic est perspiciatis?</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, voluptatibus, minus, animi cumque quam perferendis eius voluptates doloribus expedita voluptatum tempora autem ea voluptate architecto in reiciendis error recusandae enim.</p>-->
+	
+	<div id="slider_container">
+    <ul class="slides">
+        <li> 1 </li>
+        <li> 2 </li>
+        <li> 3 </li>
+        <li> 4 </li>
+    </ul>
+    <div class="controls">
+        <button id="prevSlide">PREV</button>
+        <button id="nextSlide">NEXT</button>
+    </div>
+	<div class="dots"></div>
+</div>
+	
+	<script src="jquery.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
